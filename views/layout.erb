@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <h1>Simple App Example</h1>
+    <ul>
+      <li><a href='/'>Home</a></li>
+      <li><a href='/profile'>View profile</a><% if !env['warden'].authenticated? %> (implicit sign in)<% end %></li>
+    <% if authenticated? %>
+      <li><a href='/logout'>Sign out</a></li>
+    <% else %>
+      <li><a href='/login'>Sign in</a> (explicit sign in)</li>
+    <% end %>
+    </ul>
+    <hr />
+    <%= yield %>
+  </body>
+</html>
