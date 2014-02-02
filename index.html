@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="PairUp">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PairUp</title>
+        <link rel="stylesheet" href="./css/codemirror.css">
+        <link rel="stylesheet" href="./css/twilight.css">
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <!-- <link rel="author" href="humans.txt"> -->
+        <style>
+            #start-togetherjs {
+                /*visibility: hidden*/
+            }
+
+            .CodeMirror {
+                position: absolute;
+                height: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="start-togetherjs" onclick="TogetherJS(this); return false;"></button>
+        <script src="./js/codemirror.min.js"></script>
+        <script src="https://togetherjs.com/togetherjs-min.js"></script>
+        <!-- <script src="js/main.js"></script> -->
+        <script type="text/javascript">
+            var myCodeMirror = CodeMirror(document.body, {
+                value: "Oh hai world!",
+                lineNumbers: true,
+                theme: "twilight",
+                autofocus: true,
+                tabSize: 2
+            });
+            
+            document.getElementById("start-togetherjs").click();
+        </script>
+    </body>
+</html>
