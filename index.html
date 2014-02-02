@@ -33,11 +33,14 @@
         <script src="js/bundle.js"></script>
         <script type="text/javascript">
             var myCodeMirror = CodeMirror(document.body, {
-                value: "Begin typing or drag and drop your file",
+                placeholder: "Begin typing or drag and drop a file",
                 lineNumbers: true,
                 theme: "twilight",
                 autofocus: true,
-                tabSize: 2
+                tabSize: 2,
+                autoCloseBrackets: true,
+                matchTags: true,
+                styleActiveLine: true
             });
             
             document.getElementById("start-togetherjs").click();
