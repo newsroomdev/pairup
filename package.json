@@ -1,0 +1,26 @@
+{
+  "name": "pairup",
+  "version": "0.0.1",
+  "description": "A simple pair programming tool with WebRTC",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/geraldarthur/pairup.git"
+  },
+  "keywords": [
+    "webrtc",
+    "programming",
+    "editor"
+  ],
+  "author": "Gerald Rich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geraldarthur/pairup/issues"
+  },
+  "dependencies": {
+    "bowser": "~0.3.7"
+  }
+}
