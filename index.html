@@ -20,6 +20,10 @@
                 left: 0;
                 right: 0;
             }
+
+            .CodeMirror-placeholder {
+                color: #aaa !important;
+            }
         </style>
     </head>
     <body>
@@ -27,13 +31,13 @@
         <script src="./js/codemirror.min.js"></script>
         <script> 
             var TogetherJSConfig_includeHashInUrl = true;
-            var TogetherJSConfig_dontShowClicks = false;
+            var TogetherJSConfig_dontShowClicks = true;
         </script>
         <script src="https://togetherjs.com/togetherjs-min.js"></script>
         <script src="js/bundle.js"></script>
         <script type="text/javascript">
             var myCodeMirror = CodeMirror(document.body, {
-                placeholder: "Begin typing or drag and drop a file",
+                placeholder: "Start typing or drag and drop a file into the browser...",
                 lineNumbers: true,
                 theme: "twilight",
                 autofocus: true,
